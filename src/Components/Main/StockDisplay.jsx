@@ -9,9 +9,9 @@ const StockDisplay = () => {
     const dispatch = useDispatch();
 
     const getBoxShadow = (stock) => {
-        if (stock <= 5) return '0 5px 0px 5px red';
-        if (stock > 5 && stock <= 20) return '0 5px 0px 5px yellow';
-        return '0 5px 0px 5px lightgreen';
+        if (stock <= 5) return '0 0px 0px 5px red';
+        if (stock > 5 && stock <= 20) return '0 0px 0px 5px yellow';
+        return '0 0px 0px 5px lightgreen';
     };
 
     return (
@@ -20,7 +20,7 @@ const StockDisplay = () => {
             <ul className="stock-list">
                 {products.map((product, index) => (
                     <li key={index} style={{ boxShadow: getBoxShadow(product.stock) }}>
-                        <img src={product.imgUrl} height={100} alt={product.name} />
+                        <img className='productImg' src={product.imgUrl} height={100} alt={product.name} />
                         <span className="product-name">{product.name}</span>
                         <span className="product-stock">{product.stock} {product.unityType} in stock</span>
                         <div className='add-remove'>
