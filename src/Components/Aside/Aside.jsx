@@ -9,7 +9,8 @@ const Aside = () => {
     return (
         <aside>
             <h3>low stock products:</h3>
-            <ul>
+            <hr className='topHr'></hr>
+            <ul className='lowStock'>
                 {products.map(product => {
                     let textColor;
                     if (product.stock <= 5) textColor = 'red';
@@ -17,11 +18,12 @@ const Aside = () => {
                     else return null;  // Skip products with stock over 20
 
                     return (
-                        <li key={product.name} style={{ color: textColor }}>
-                            {product.name}: {product.stock} {product.unityType}
-                        </li>
+                        <li className='lowP' key={product.name} style={{ color: textColor }}>
+                            {product.name}: {product.stock}
+                        </li>                       
                     );
                 })}
+               
             </ul>
         </aside>
     );

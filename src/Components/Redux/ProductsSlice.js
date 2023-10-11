@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = [
     { unityType: 'kg', name: "Harina", stock: 100, imgUrl: 'https://w0.peakpx.com/wallpaper/515/135/HD-wallpaper-mahatma-buddha-animated-mahatma-buddha-buddha-animated-lord-buddha-meditating-thumbnail.jpg' },
     { unityType: 'kg', name: "Manjar", stock: 22, imgUrl: 'https://w0.peakpx.com/wallpaper/515/135/HD-wallpaper-mahatma-buddha-animated-mahatma-buddha-buddha-animated-lord-buddha-meditating-thumbnail.jpg' },
-    { unityType: 'paquetes de 20', name: "Galletas", stock: 15, imgUrl: 'https://w0.peakpx.com/wallpaper/515/135/HD-wallpaper-mahatma-buddha-animated-mahatma-buddha-buddha-animated-lord-buddha-meditating-thumbnail.jpg' },
+    { unityType: 'packs', name: "Galletas", stock: 15, imgUrl: 'https://w0.peakpx.com/wallpaper/515/135/HD-wallpaper-mahatma-buddha-animated-mahatma-buddha-buddha-animated-lord-buddha-meditating-thumbnail.jpg' },
     { unityType: 'unidades', name: "Alfajores", stock: 5, imgUrl: 'https://w0.peakpx.com/wallpaper/515/135/HD-wallpaper-mahatma-buddha-animated-mahatma-buddha-buddha-animated-lord-buddha-meditating-thumbnail.jpg' }
 ];
 
