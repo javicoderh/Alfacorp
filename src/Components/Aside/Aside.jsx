@@ -8,7 +8,7 @@ const Aside = () => {
 
     return (
         <aside>
-            <h3>low stock products</h3>
+            <h3>low stock products:</h3>
             <ul>
                 {products.map(product => {
                     let textColor;

@@ -13,6 +13,7 @@
 }
 
 .header-logo {
+    filter: drop-shadow(0px 0px 5px rgb(209, 166, 87));
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -26,4 +27,13 @@
     grid-row-start: 2;
     grid-row-end: 4;
     color: beige;
+    text-shadow:
+          2px 0 rgb(173, 133, 46),
+          0 2px rgb(173, 133, 46),
+         -2px 0 rgb(173, 133, 46),
+          0 -2px rgb(173, 133, 46),
+          2px 2px rgb(173, 133, 46),
+         -2px -2px rgb(173, 133, 46),
+         -2px 2px rgb(173, 133, 46),
+          2px -2px rgb(173, 133, 46);    
 }
