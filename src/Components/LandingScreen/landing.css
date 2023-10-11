@@ -1,0 +1,11 @@
+.landing-screen {
+    width: 100vw; /* Use the entire screen width */
+    height: 100vh; /* Use the entire screen height */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1rem;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    background-color: black;
+}

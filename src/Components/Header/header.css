@@ -1,0 +1,29 @@
+/* Header.css */
+.header {
+    outline: solid purple 1px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center; 
+    justify-items: center; 
+    height: 100%; 
+}
+
+.header-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* Add other styles for the logo if needed, e.g., width, height */
+}
+
+.header-title {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color: beige;
+}
