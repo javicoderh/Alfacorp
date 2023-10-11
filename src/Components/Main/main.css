@@ -49,7 +49,7 @@ border: solid 2px white;
     flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 5;
-    margin-left: 1rem;
+    margin-left: 5rem;
 }
 
 .stock-screen h2 {
@@ -59,7 +59,7 @@ color: beige;
 
 .stock-list {    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     list-style-type: none;
     padding: 0;
