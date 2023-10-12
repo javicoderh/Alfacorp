@@ -5,15 +5,15 @@ import buddha from '../../assets/buddha.jpg'
 import {Link} from 'react-router-dom'
 
 
-const Stock = () => {
+const ProductionButton = () => {
     return (
-        <Link to="/stock">
-            <div className="stock">
+        <Link to="/productionLine">
+            <div className="productionButton">
                 <img src={buddha} alt="Stock Image" className="stock-image" />
-                <h3 className="stock-title">Bodega</h3>        
+                <h3 className="stockForm-title">Linea de <br></br> producción</h3>        
             </div>
         </Link>
     );
 }
 
-export default Stock;
+export default ProductionButton;

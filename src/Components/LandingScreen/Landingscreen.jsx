@@ -4,13 +4,17 @@ import './landing.css';
 import Header from '../Header/Header';
 import Stock from '../Main/Stock';
 import Aside from '../Aside/Aside';
+import StockFormButton from '../Main/formButton';
+import ProductionButton from '../Main/productionButton';
 
 const LandingScreen = () => {
     return (
         <div className="landing-screen">
             <Header />
             <Stock />
-            <Aside />
+            <StockFormButton /> 
+            <ProductionButton />          
+            <Aside />           
         </div>
     );
 }

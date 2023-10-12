@@ -1,6 +1,5 @@
 /* Header.css */
 .header {
-    outline: solid purple 1px;
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
     grid-column-start: 1;
@@ -37,3 +36,13 @@
          -2px 2px rgb(173, 133, 46),
           2px -2px rgb(173, 133, 46);    
 }
+
+@media (min-width: 901px){
+
+    .header {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+    }

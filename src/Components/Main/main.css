@@ -15,6 +15,63 @@
     z-index: 5;
 }
 
+.stockFormButton {
+    width: 100px; /* Adjust based on your preferred size */
+    height: 100px; /* This will make the corners rounded */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 1rem;
+    z-index: 5;
+}
+
+.productionTitle {
+    color: beige;
+} 
+
+.production-screen {
+display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.productionButton {
+    width: 100px; 
+    height: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 1rem;
+    z-index: 5;  
+    grid-column-start: auto; 
+}
+
+.productosListos {
+    display : flex; flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: beige;
+    background-color: rgb(54, 54, 54);
+    border: solid 1px beige;
+    padding-left: 1rem;
+}
+
+.botonProducto {
+    transform: scale(0.8);
+    color: white;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    border: solid 1px beige;
+}
+
 .stock-image {
     width: 98%; /* 1% padding on each side */
     height: auto;
@@ -25,19 +82,84 @@
     transition: 0.4s;
 }
 
+.Insumos {
+color: beige;
+}
+
 .stock-image:hover {
 transform: scale(1.05);
 border: solid 2px white;
+box-shadow: 0px 0px 20px 5px white;
 }
 
 .stock-title {
     position: absolute;
-    top:100%;
+    top:130%;
     z-index: 2;
     background-color: rgba(0,0,0, 0.7);
     border-radius: 50%;
     color: white; /* Adjust if needed */
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+.stockForm-title {
+    position:absolute;
+    top:110%;
+    z-index: 2;
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 50%;
+    color: white; /* Adjust if needed */
+    font-size: 1rem;  
+   
+}
+
+
+.stockForm {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-column-start: 1;
+grid-column-end: 6;
+}
+
+.stockForm h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: rgb(75, 103, 226);
+}
+
+.stockForm label {
+    color: beige
+}
+
+.formProduct {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ grid-column-start: 1;
+ grid-column-end: 3;
+ gap: 1rem;
+}
+
+.stockForm input {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.addToStorage {
+ margin-top: 1rem;
+ color: beige;
+ background-color: rgb(56, 56, 56);
+ border: solid 1px silver;
+ transition: 0.3s;
+}
+
+.addToStorage:hover {
+    transform: scale(0.95);
+    border: solid 2px white;
+    color: white;
+    box-shadow: 0px 0px 20px 5px white;
 }
 
 
@@ -51,6 +173,21 @@ border: solid 2px white;
     grid-column-start: 1;
     grid-column-end: 5;
     margin-left: 3rem;
+}
+
+.colNest {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+grid-column-start: 1;
+grid-column-end: 3;
+margin-left: 1rem;
+}
+
+.Checked {
+transform:  scale(1.2);
+color: lightgreen !important;
 }
 
 .stock-screen h2 {
@@ -110,6 +247,15 @@ color: white;
 background-color: rgb(54, 54, 54);
 }
 
+.formHome {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    grid-row-start: 4;
+    border: solid 1px white;
+    color: white;
+    background-color: rgb(54, 54, 54);  
+}
+
 /** STOCK **/
 
 @media (min-width: 901px){
@@ -117,4 +263,27 @@ background-color: rgb(54, 54, 54);
 .stock-list{
     grid-template-columns: repeat(4, 1fr);
 }
+
+.stockForm {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-left: 1rem;
+    }
+
+    .stockForm h2 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        color: beige;
+    }
+
+    .formProduct {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        gap: 1rem;
+       }
 }

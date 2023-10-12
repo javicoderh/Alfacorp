@@ -1,11 +1,11 @@
-// StockScreen.jsx
+import { addInsumoItem } from '../Redux/productionLineSlice';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { addElement, removeElement } from '../Redux/ProductsSlice'; // Adjust the path to your actual location
+import { addElement, removeAndAddToProduction } from '../Redux/ProductsSlice'; // Import actions from ProductsSlice
 
 const StockDisplay = () => {
-    const products = useSelector(state => state.products); // Grabbing products from Redux store
+    const products = useSelector(state => state.products); 
     const dispatch = useDispatch();
 
     const getBoxShadow = (stock) => {
@@ -25,7 +25,10 @@ const StockDisplay = () => {
                         <span className="product-stock">{product.stock} {product.unityType} in stock</span>
                         <div className='add-remove'>
                             <button onClick={() => dispatch(addElement(product.name))}>+</button>
-                            <button onClick={() => dispatch(removeElement(product.name))}>-</button>
+                            <button onClick={() => {
+                                dispatch(removeAndAddToProduction(product.name)); 
+                                dispatch(addInsumoItem(product.name)); // Dispatch action to add the product to insumos
+                            }}>-</button> 
                         </div>
                     </li>
                 ))}

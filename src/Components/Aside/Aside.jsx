@@ -8,7 +8,7 @@ const Aside = () => {
 
     return (
         <aside>
-            <h3>low stock products:</h3>
+            <h3>Productos con bajo stock:</h3>
             <hr className='topHr'></hr>
             <ul className='lowStock'>
                 {products.map(product => {
